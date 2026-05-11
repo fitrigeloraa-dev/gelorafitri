@@ -739,7 +739,48 @@
             transform: translateY(-3px);
             box-shadow: 0 0 60px rgba(59, 130, 246, 0.7);
         }
+/* Personal Section */
+#personal {
+    background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba(30, 58, 95, 0.25) 50%,
+        transparent 100%
+    );
+}
 
+.personal-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.personal-card {
+    background: rgba(30, 58, 95, 0.35);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.personal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+    border-color: var(--cyan-accent);
+}
+
+.personal-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--cyan-accent);
+}
+
+.personal-card p {
+    color: var(--white);
+    line-height: 1.7;
+}
         /* Footer */
         footer {
             padding: 3rem 10%;
@@ -1082,7 +1123,53 @@
             </form>
         </div>
     </section>
+    
+<!-- Personal Section -->
+<section id="personal">
+    <div class="reveal">
+        <span class="section-label">Personal</span>
+        <h2 class="section-title">Tentang Kehidupan Saya</h2>
+    </div>
 
+    <div class="personal-wrapper reveal">
+
+        <div class="personal-card">
+            <h3>👩 Tentang Saya</h3>
+            <p>
+                Saya adalah seorang siswi SMK jurusan Teknik Informatika
+                yang memiliki minat besar di bidang teknologi,
+                desain website, dan pengembangan aplikasi modern.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <h3>🎯 Cita-Cita</h3>
+            <p>
+                Saya ingin menjadi seorang Web Developer profesional
+                dan membangun aplikasi yang bermanfaat bagi banyak orang.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <h3>💡 Hobi</h3>
+            <p>
+                Saya suka belajar coding, mendesain UI/UX,
+                mendengarkan musik, dan mengeksplorasi teknologi baru.
+            </p>
+        </div>
+
+        <div class="personal-card">
+            <h3>🚀 Pengalaman</h3>
+            <p>
+                Saya pernah membuat project website portfolio,
+                desain dashboard, dan aplikasi sederhana
+                selama belajar di sekolah.
+            </p>
+        </div>
+
+    </div>
+</section>
+    
     <!-- Footer -->
     <footer>
         <p>© 2026 Gelora fitri. Dibuat dengan ❤️ di Indonesia.</p>
